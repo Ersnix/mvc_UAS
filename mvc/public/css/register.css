@@ -1,0 +1,157 @@
+*{
+            margin:0;
+            padding: 0;
+            font-family: Lucida Calligraphy;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: #131419;
+        }
+        form{
+            position: relative;
+            float: left;
+            width: 350px;
+            padding: 40px 40px 60px;
+            background: #131419;
+            text-align: center;
+            box-shadow: -5px -5px 10px rgba(255,255,255,0.05),
+                        5px 5px 15px rgba(0,0,0,0.5);
+        }
+        .green{
+            color: #43BD05;
+        }
+        form .tit{
+            color: #43BD05;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+        }
+        form .titb{
+            color: #ff0047;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+        }
+        form .input{
+            text-align: left;
+            margin-top: 40px;
+        }
+        .box{
+            margin-top: 20px;
+        }
+        label{
+            display: block;
+            color: #868686;
+            margin-bottom: 5px;
+            font-size: 18px;
+        }
+        .box input{
+            width: 87%;
+            height: 50px;
+            background: #131419;
+            border:none;
+            outline: none;
+            border-radius: 40px;
+            padding: 1px 15px;
+            font-size: 18px;
+            color: #03a9f4;
+            box-shadow: inset -2px -2px 6px rgba(255,255,255,0.1),
+                        inset 2px 2px 6px rgba(0,0,0,0.8);
+        }
+        select{
+            width: 94%;
+            height: 50px;
+            background: #131419;
+            border:none;
+            outline: none;
+            padding: 1px 15px;
+            font-size: 18px;
+            color: #03a9f4;
+            box-shadow: -1px -1px 4px rgba(255,255,255,0.1),
+                     2px 2px 6px rgba(0,0,0,0.8);
+            cursor: pointer;
+
+        }
+        input[type="Password"]::placeholder{
+            font-size: 22px;
+            letter-spacing: 4px;
+        }
+        
+        .box .submit{
+            width: 96%;
+            margin-top: 20px;
+            box-shadow: -2px -2px 6px rgba(255,255,255,0.1),
+                     2px 2px 6px rgba(0,0,0,0.8);
+            cursor: pointer;
+        }
+        .box .submit1{
+            width: 96%;
+            margin-top: 20px;
+            box-shadow: -2px -2px 6px rgba(255,255,255,0.1),
+                     2px 2px 6px rgba(0,0,0,0.8);
+            cursor: not-allowed;
+
+        }
+        button[type="submit"]:active{
+            width: 96%;
+            margin-top: 20px;
+            box-shadow:inset  -2px -2px 6px rgba(255,255,255,0.1),
+                     inset 2px 2px 6px rgba(0,0,0,0.8);
+        }
+        p{
+            margin-top: 30px;
+            font-size: 14px;
+            color: #868686;
+        }
+        p a{
+            color: #43BD05;
+        }
+        .box a{
+            color: #03a9f4;
+            position: absolute;
+            right: 25px;
+            top: 260px;
+        }
+        .sudah{
+            color: #03a9f4;
+        }
+        .belum{
+            color: #ff0047;
+        }
+        .logout{
+            color: #ff0047;
+            padding: 10px 20px;
+            border: 1px solid #ff0047;
+        }
+        .harus{
+            color: #868686;
+        }
+
+        .harus div{
+            margin: 25px 50px;
+        }
+        .harus i{
+            width: 25px;
+        }
+        .harus .sudah i{
+            color: #43BD05;
+            
+        }
+        .judul{
+            position: absolute;
+            top: 100px;
+            left: 42%;
+            color: #131419;
+        }
+        .judul h1{
+            font-size: 120px;
+            text-shadow: -5px -5px 10px rgba(255,255,255,0.05),
+            -5px -5px 10px rgba(255,255,255,0.05),
+                        5px 5px 15px rgba(0,0,0,0.5);
+        }
+        option{
+            border:1px solid #03a9f4;
+        }
