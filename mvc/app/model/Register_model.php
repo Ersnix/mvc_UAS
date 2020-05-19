@@ -6,12 +6,12 @@ class Register_model{
         $this->db = new Database;
     }
     public function register($data){
-        $nama = htmlspecialchars($data['nama']);
         $username = htmlspecialchars($data['username']);
-        $password = $data['password'];
-        $level = $data['level'];
+        $password = md5($data['password']);
+        $level = "user";
+        $alamat = $data['alamat'];
 
-        $query = "INSERT INTO user(username,password,level) VALUES ('$username','$password','$level')";
+        $query = "INSERT INTO user(username,password,level,alamat) VALUES ('$username','$password','$level','$alamat')";
         $this->db->query($query);
         $this->db->execute();
         return $this->db->rowCount();

@@ -7,7 +7,8 @@
     <link rel="stylesheet" type="text/css" href="<?= BASEURL ?>/css/register.css">
 </head>
 
-<body>
+<body class="body">
+    <center>
     <form action="<?= BASEURL ?>/register/prosesRegister" id="form" class="form"  method="post">
         <h2 id="tit" class="titb">Sign Up</h2>
         <div class="input">
@@ -21,19 +22,25 @@
                 <a onclick="tampil()" href="#" id="tampil"></a>
             </div>
             <div class="box">
-                <label>level</label>
+                <label>Alamat</label>
+                <input id="alamat" type="text" name="alamat" placeholder="masukan alamat" required="" autocomplete="off">
+                <a onclick="tampil()" href="#" id="tampil"></a>
+            </div>
+            <!-- <div class="box">
+                <label>level</label><br>
                 <select name="level" id="level">
                     <option>admin</option>
                     <option>petugas</option>
                     <option>user</option>
                 </select>
-            </div>
+            </div><br> -->
             <div class="box">
                 <input type="submit" id="submit" class="submit1"  name="" value="Sign Up">
             </div>
         </div>
-        <p>Alredy have an account ? <a href="<?= BASEURL?>">Sign In</a></p>
+        <p>Sudah punya akun ? <a href="<?= BASEURL?>">Sign In</a></p>
     </form>
+    </center>
     <div class="harus" id="harus">
         <center>
             <h2>Required Password</h2>

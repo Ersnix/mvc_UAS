@@ -10,41 +10,6 @@ if (isset($_SESSION['status'])) {
     unset($_SESSION['status']);
 }
 ?>
-<!-- <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="stylesheet" href="<?=BASEURL?>/css/style.css">
-</head>
-
-<body>
-    <center>
-
-        <h1>Login</h1>
-
-        <form action="<?= BASEURL ?>/login/prosesLogin" method="post">
-            <label for="username">Username</label><br>
-            <input type="text" name="username" id="username" autocomplete="off" required><br>
-            <label for="password">Password</label><br>
-            <input type="password" name="password" id="password" autocomplete="off" required><br>
-            <a href="<?= BASEURL ?>/register">belum punya akun? Register</a><br>
-
-            <button type="submit">Login</button>
-        </form>
-    </center>
-</body>
-
-</html>
- -->
-
-
-
-
-
-
 
 
 
@@ -58,6 +23,8 @@ if (isset($_SESSION['status'])) {
 </head>
 
 <body>
+    <div class="body">
+    <center>
     <form action="<?= BASEURL ?>/login/prosesLogin" id="form" class="form"  method="post">
         <h2 id="tit" class="tit">Sign In</h2>
         <div class="input">
@@ -69,13 +36,15 @@ if (isset($_SESSION['status'])) {
                 <label>Password</label>
                 <input id="password" type="Password" name="password" placeholder="........." required="">
                 <a onclick="tampil()" href="#" id="tampil"></a>
-            </div>
+            </div><br>
             <div class="box">
                 <input type="submit" id="submit" class="submit"  name="" value="Sign In">
             </div>
         </div>
-        <p>Doesn't have account ? <a href="<?= BASEURL?>/register">Sign Up</a></p>
+        <p>Tidak punya akun ? <a href="<?= BASEURL?>/register">Sign Up</a></p>
     </form>
+    </center>
+    </div>
     </body>
 </html>
 <script type="text/javascript" src="<?= BASEURL?>/javaScript/js.js"></script>

@@ -8,7 +8,7 @@ class Login_model
     public function login($data)
     {
         $username = htmlspecialchars($data['username']);
-        $password = $data['password'];
+        $password = md5($data['password']);
 
         $query = "SELECT * FROM user WHERE username='$username' AND password='$password'";
         $this->db->query($query);
